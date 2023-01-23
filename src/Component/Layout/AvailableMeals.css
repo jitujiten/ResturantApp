@@ -1,0 +1,27 @@
+.ul{
+    background: rgb(247, 242, 242);
+    position: relative;
+    left: 20%;
+    top: -8rem;
+    width: 60%;
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.li{
+    list-style-type: none;
+}
+.name{
+   font-weight:700; 
+}
+.des{
+  font-size: small;  
+  font-style: italic;
+}
+.price{
+  color:#b94517 ;
+  font-weight: 800;
+}

@@ -1,20 +1,21 @@
 .card{
     background: rgb(60, 57, 57);
+    position: relative;
     color:white;
-    position:relative ;
-    left: 22rem;
-    top: -11rem;
-    width: 45rem;
-    height: 14rem;
-    z-index: 20;
+    left: 25%;
+    top: -10rem;
+    width: 50%;
+    height: 37%;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3% ;
     border-radius: 15px;
     text-align: center;
-    gap: 20px;
-    box-shadow: 0px 2px 5px rgb(72, 70, 70);
+    gap: 4px;
+    box-shadow: 2px 4px  8px rgb(72, 70, 70);
 }
 .para{
-    font-size:15px;
+    font-size:0.9rem;
 }
+
+
