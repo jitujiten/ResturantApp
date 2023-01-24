@@ -1,0 +1,21 @@
+.itemform{
+   display:flex;
+   flex-direction: column; 
+   gap: 7px;
+   margin-top: 5px;
+}
+.button{
+  height: 45%;   
+  width: 71%;
+  background: #b94517;
+  position: relative;
+  right: -30%;
+  color: beige;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 25px;
+}
+.button:hover,
+  .button:active{
+    background-color: #92320c;
+  }

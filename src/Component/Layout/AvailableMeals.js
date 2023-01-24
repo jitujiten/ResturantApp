@@ -1,5 +1,7 @@
 import React from "react";
 import "./AvailableMeals.css";
+import ItemForm from "./ItemForm";
+
 const Availabelmeals = () => {
   const dummy_meals = [
     {
@@ -34,12 +36,17 @@ const Availabelmeals = () => {
         {dummy_meals.map((meals) => {
           return (
             <React.Fragment>
-            <li className="li">
-              <p className="name">{meals.name}</p>
-              <p className="des">{meals.description}</p>
-              <p className="price">${meals.price}</p>
-            </li>
-            <hr></hr>
+              <div className="form">
+                <li className="li">
+                  <p className="name">{meals.name}</p>
+                  <p className="des">{meals.description}</p>
+                  <p className="price">${meals.price}</p>
+                </li>
+
+                <ItemForm />
+              </div>
+              <br></br>
+              <hr></hr>
             </React.Fragment>
           );
         })}

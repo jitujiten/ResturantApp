@@ -6,11 +6,14 @@
     width: 60%;
     padding: 2%;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     gap:10px;
 }
 
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .li{
     list-style-type: none;
 }
