@@ -3,7 +3,7 @@ import Header from "./Component/Layout/Header";
 import Summary from "./Component/Layout/Summary";
 import Availabelmeals from "./Component/Layout/AvailableMeals";
 import Cart from "./Component/Cart/Cart";
-
+import CartProvider from "./Store/CartProvider";
 
 function App() {
 
@@ -17,13 +17,13 @@ function App() {
  }
 
   return (
-    <React.Fragment>
+    <CartProvider>
    {cartdisplay && <Cart oncartremove={cartnotdisplayhandler}/>} 
    {!cartdisplay &&  <Header onpress={presshandler}/>} 
    
     <Summary/>
     <Availabelmeals/>
-    </React.Fragment>
+    </CartProvider>
   );
 }
 

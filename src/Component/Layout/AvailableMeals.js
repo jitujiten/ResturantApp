@@ -35,8 +35,9 @@ const Availabelmeals = () => {
       <ul className="ul">
         {dummy_meals.map((meals) => {
           return (
-            <React.Fragment>
-              <div className="form">
+            <React.Fragment key={meals.id}>
+              <div 
+              className="form">
                 <li className="li">
                   <p className="name">{meals.name}</p>
                   <p className="des">{meals.description}</p>
